@@ -1,0 +1,191 @@
+.card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: 300px;
+    margin: 30px 20px 20px 20px ;
+    position: relative;
+    width: 300px;
+  }
+  
+  .card-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+  .card-1:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .hit-the-floor {
+    color: rgb(24, 1, 1);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+    }
+    
+    .hit-the-floor {
+      text-align: center;
+    }
+    .disc{
+      text-align:center;
+      font-weight:bold;
+    }
+    /*button*/
+   
+  .slide:hover,
+  .slide:focus {
+    box-shadow: inset 6.5em 0 0 0 var(--hover);
+  }
+  
+  .offset {
+    box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+  }
+  .offset:hover, .offset:focus {
+    box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+  }
+  .slide {
+    --color: #8fc866;
+    --hover: #66c887;
+  }
+  
+  .offset {
+    --color: #19bc8b;
+    --hover: #1973bc;
+  }
+  
+  button {
+    color: var(--color);
+    transition: 0.25s;
+  }
+  button:hover, button:focus {
+    border-color: var(--hover);
+    color: #fff;
+  }
+  
+  body {
+    color: #fff;
+    background: #17181c;
+    font: 300 1em 'Fira Sans', sans-serif;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+  }
+  
+  button {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    
+    margin:-35px 14px 0px 0px;
+    padding: 0.5em 2em;
+    float:right;
+  }
+  
+  h1 {
+    font-weight: 400;
+  }
+  
+  code {
+    color: #e4cb58;
+    font: inherit;
+  }
+  /*for rupee*/
+  .rup{ margin:20px 0 4px 15px;
+    color:#550707;
+  
+  }
+  /*top image*/
+  .rel{
+    position:relative;
+    text-align: center;
+  }
+  .atext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:80px;
+    color:white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  
+  }
+  .awesome {
+      
+    font-family: futura;
+    font-style: italic;
+    
+    width:100%;
+    
+    margin: 0 auto;
+    text-align: center;
+    
+    color:#313131;
+    font-size:100px;
+    font-weight: bold;
+    
+    -webkit-animation:colorchange 20s infinite alternate;
+    
+    
+  }
+  @-webkit-keyframes colorchange {
+    0% {
+      
+      color: blue;
+    }
+    
+    10% {
+      
+      color: #8e44ad;
+    }
+    
+    20% {
+      
+      color: #1abc9c;
+    }
+    
+    30% {
+      
+      color: #d35400;
+    }
+    
+    40% {
+      
+      color: blue;
+    }
+    
+    50% {
+      
+      color: #34495e;
+    }
+    
+    60% {
+      
+      color: blue;
+    }
+    
+    70% {
+      
+      color: #2980b9;
+    }
+    80% {
+   
+      color: #f1c40f;
+    }
+    
+    90% {
+   
+      color: #2980b9;
+    }
+    
+    100% {
+      
+      color: pink;
+    }
+  }
+  /*particle bc*/
+  

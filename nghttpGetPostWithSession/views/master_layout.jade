@@ -1,0 +1,68 @@
+block variables
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    |     
+    meta(name='description', content='')
+    |     
+    meta(name='author', content='')
+    |     
+    title Dummy Template
+    // Bootstrap core CSS
+    link(href='#{base_url}vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='#{base_url}css/modern-business.css', rel='stylesheet')
+    link(href='#{base_url}web-fonts-with-css/css/fontawesome-all.min.css', rel='stylesheet')
+  |   
+  body
+    
+    // Navigation
+    nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+      .container
+        a.navbar-brand(href='#{base_url}index.html') Dummy Base Project
+        |         
+        button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        |         
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href='#{base_url}index.html') Home
+            | 
+            li.nav-item
+              a.nav-link(href='#{base_url}about.html') About us
+            |             
+            li.nav-item
+              a.nav-link(href='#{base_url}contact.html') Contact
+            |             
+            li.nav-item.dropdown
+              a#navbarDropdownPortfolio.nav-link.dropdown-toggle(href='#{base_url}#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                | My Account
+              |               
+              .dropdown-menu.dropdown-menu-right(aria-labelledby='navbarDropdownPortfolio')
+                a.dropdown-item(href='#{base_url}my-profile.html') My Profile
+                |                 
+                a.dropdown-item(href='#{base_url}dashboard.html') Dashboard
+                |                 
+                a.dropdown-item(href='#{base_url}auth/logout.html') Logout 
+            li.nav-item
+              a.nav-link(href='#{base_url}auth/login.html') Login
+            li.nav-item
+              a.nav-link(href='#{base_url}auth/register.html') Register
+            |               
+    // Page Content
+    
+    block midContent
+    // /.container
+    // Footer
+    footer.py-5.bg-dark
+      .container
+        p.m-0.text-center.text-white Copyright &copy; Your Website 2018
+      // /.container
+    // Bootstrap core JavaScript
+    script(src='#{base_url}vendor/jquery/jquery.min.js')
+    |     
+    script(src='#{base_url}vendor/bootstrap/js/bootstrap.bundle.min.js')

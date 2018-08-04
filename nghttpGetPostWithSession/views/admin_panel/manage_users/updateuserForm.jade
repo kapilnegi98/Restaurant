@@ -1,0 +1,23 @@
+extends ../includes/admin_layout
+block rightSidebar
+  h1= title
+  h2= subTitle
+  h3.alert.alert-success= extraMessage
+  p This form will insert data into crudDB.users
+  
+  form(action=actionURL,method="post")
+    .form-group 
+      label(for="f_name") First name
+      input#f_name.form-control(type="text", name="f_name",value="#{usersDetails.f_name}")
+      input.form-control(type="hidden", name="objectID",value="#{usersDetails._id}")
+    .form-group 
+      label(for="l_name") Last name
+      input#l_name.form-control(type="text", name="l_name",value="#{usersDetails.l_name}")
+    .form-group 
+      label(for="username") Username
+      input#username.form-control(type="text", name="username",value="#{usersDetails.username}")
+    .form-group 
+      label(for="password") Password
+      input#password.form-control(type="password", name="password",value="#{usersDetails.password}")
+    .form-group 
+      input#submit.form-control(type="submit", value="Update User")

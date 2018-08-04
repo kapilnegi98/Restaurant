@@ -1,0 +1,60 @@
+<body>
+    <div class="container lmargin">
+      <div class="row main">
+        <div class="panel-heading">
+          <div class="panel-title text-center">
+            <h1 class="title">Apsara</h1>
+            <hr />
+          </div>
+        </div>
+        <div class="main-login main-center">
+          <form class="form-horizontal" method="post" [formGroup]="form" (ngSubmit)="login()">
+  
+        
+  
+           
+            <div class="form-group">
+              <label for="username" class="cols-sm-2 control-label">Username</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <i class="fa fa-users fa" aria-hidden="true"></i>
+                  </span>
+                  <input id="username" type="text" formControlName="username" class="form-control">
+                  <div *ngIf="form.controls.username.touched && !form.controls.username.valid" class="alert alert-danger">
+                    username is required
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="form-group">
+              <label for="password" class="cols-sm-2 control-label">Password</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <i class="fa fa-lock fa-lg" aria-hidden="true"></i>
+                  </span>
+                  <input id="password" type="password" formControlName="password" class="form-control">
+                  <div *ngIf="form.controls.password.touched && !form.controls.password.valid" class="alert alert-danger">
+                    password is required
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="alert alert-success" *ngIf="form_insert_msg!=''">
+              {{form_insert_msg}}
+            </div>
+  
+            <div class="form-group ">
+              <input id="submit_button" [disabled]="form.invalid" type="submit" value="login" class="form-control">
+            </div>
+           
+          </form>
+        </div>
+      </div>
+    </div>
+  
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+  </body>

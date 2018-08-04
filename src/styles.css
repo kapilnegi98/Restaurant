@@ -1,0 +1,179 @@
+.parallax {
+    /* The image used */
+    background-image: url("assets\images\banner-bg.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+    max-width:100%;
+margin-top:-45px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.threeparallax {
+    /* The image used */
+    background-image: url("assets\images\crew-89808-unsplash.jpg")!important;
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0 -20px 0 -20px; 
+}
+
+.starparallax {
+    /* The image used */
+    background-image: url("assets\images\starterswall.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:55px -20px 0 -20px;
+}
+
+
+.homparallax {
+    /* The image used */
+    background-image: url("assets\images\mainimage.jpg");
+
+    /* Set a specific height */
+    min-height: 800px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:50px -20px 0 -20px;
+}
+
+
+/* home page 2nd parallex image*/
+.secparallax {
+    /* The image used */
+    background-image: url("assets\images\cas.jpg");
+
+    /* Set a specific height */
+    min-height: 700px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0 -15px 0 -15px;
+}
+.bookparallax {
+    /* The image used */
+    background-image: url("assets\images\b1.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:40px -15px 0 -15px;
+}
+
+.revparallax {
+    /* The image used */
+    background-image: url("assets\images\r1.jpg");
+
+    /* Set a specific height */
+    min-height: 800px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:20px -15px 0 -15px;
+}
+
+.abotparallex {
+    /* The image used */
+    background-image: url("assets\images\about.jpg");
+
+    /* Set a specific height */
+    min-height: 800px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:50px -15px 0 -15px;
+}
+.aaimage{
+    background-image: url("assets\images\aaimage.jpg");
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:50px 0 0 0;
+}
+
+.desparallax {
+    /* The image used */
+    background-image: url("assets\images\dessert\dessert.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:55px -20px 0 -20px;
+}
+
+.driparallax {
+    /* The image used */
+    background-image: url("assets\images\drinks\drinks.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:55px -20px 0 -20px;
+}
+
+.maiparallax{
+    /* The image used */
+    background-image: url("assets\images\starterswall.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:55px -20px 0 -20px;
+}
+
+
+
+

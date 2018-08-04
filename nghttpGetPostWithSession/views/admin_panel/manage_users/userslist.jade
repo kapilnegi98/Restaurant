@@ -1,0 +1,25 @@
+extends ../includes/admin_layout
+block rightSidebar
+  h1= title
+  h2= subTitle
+  h3.alert.alert-success= extraMessage
+  p This page is fetching values from crudDB.users
+  table.table.table-bordered.table-hover(border="1")
+    tr
+        th First name 
+        th Last Name 
+        th Username
+        th Password
+        th Action
+    each user in users
+        tr
+            td= user.f_name
+            td= user.l_name
+            td= user.username
+            td= user.password
+            td
+                a.deleteLink.text-danger(href="#{siteConfig.base_url}manage_users/delete?objectID=#{user._id}")
+                    i.far.fa-trash-alt
+                &nbsp;    
+                a.deleteLink.text-success(href="#{siteConfig.base_url}manage_users/updateUser?objectID=#{user._id}")
+                    i.far.fa-edit

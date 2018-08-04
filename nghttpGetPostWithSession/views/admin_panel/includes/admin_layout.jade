@@ -1,0 +1,32 @@
+extends ../../master_layout
+block variables
+        - base_url = siteConfig.base_url
+    block midContent
+      .container
+        // Page Heading/Breadcrumbs
+        h1.mt-4.mb-3
+          | Admin Panel
+        |       
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='#{base_url}index.html') Home
+          |         
+          li.breadcrumb-item.active About
+        .row
+          // Sidebar Column
+          .col-lg-3.mb-4
+            .list-group
+              a.list-group-item(href='#{siteConfig.base_url}dashboard/index.html') Dashboard
+              |             
+              a.list-group-item(href='#{siteConfig.base_url}manage_users/index.html') Manage Users      
+              |             
+              a.list-group-item(href='#{siteConfig.base_url}manage_users/index.html') -- Create Users      
+              |             
+              a.list-group-item(href='#{siteConfig.base_url}manage_users/all_users.html') -- All Users      
+              |             
+              a.list-group-item(href='#{siteConfig.base_url}auth/logout.html') Logout      
+          // Content Column
+          .col-lg-9.mb-4
+            block rightSidebar
+        // /.row
+    
